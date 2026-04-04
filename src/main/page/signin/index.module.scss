@@ -1,0 +1,21 @@
+@use "@css/base/_timing" as timing;
+
+.signin-container {
+  width: 300px;
+}
+
+.rotate {
+  animation: rotate-45deg 3s infinite timing.$ease-out1;
+}
+
+@keyframes rotate-45deg {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(375deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

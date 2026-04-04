@@ -1,0 +1,53 @@
+@use "@css/base/_color" as color;
+
+button {
+  --button-color: #{color.$solid-dark};
+  --button-background-color: #{color.$solid-white};
+  --button-font-size: 20px;
+
+  width: 100%;
+  min-width: 200px;
+  padding: 15px 12px;
+  color: var(--button-color);
+  background-color: var(--button-background-color);
+  box-shadow: 0 4px 10px #0000000D;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: var(--button-font-size);
+  cursor: pointer;
+  transition: .4s cubic-bezier(0, .35, .5, 1);
+  transition-property: background-color, box-shadow;
+}
+
+button:hover:not(button:disabled) {
+  filter: brightness(0.99);
+  transition: none;
+}
+
+button:active:not(button:disabled) {
+  filter: brightness(0.98);
+  box-shadow: none;
+}
+
+button:disabled {
+  --button-background-color: #{color.$solid-shallowgray};
+  --button-color: #{color.$solid-gray};
+
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+button.large {
+  --button-font-size: 16px;
+
+  min-width: 300px;
+  padding: 15px 15px;
+  box-shadow: 0 3px 8px #0000000D;
+}
+
+button.small {
+  --button-font-size: 14px;
+
+  padding: 15px 10px;
+  box-shadow: 0 2px 7px #0000000D;
+}

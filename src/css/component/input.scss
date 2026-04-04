@@ -1,0 +1,46 @@
+@use "@css/base/_color" as color;
+
+input {
+  --input-padding-y: 18px;
+  --input-padding-x: 20px;
+  --input-font-size: 16px;
+  --input-background-color: #{color.$cave-gray};
+  --input-color: #{color.$solid-dark};
+
+  width: calc(100% - (var(--input-padding-x) * 2));
+  min-width: calc(300px - (var(--input-padding-x) * 2));
+  padding: var(--input-padding-y) var(--input-padding-x);
+  background-color: var(--input-background-color);
+  color: var(--input-color);
+  box-shadow: 2px 2px 5px #0000000D inset;
+  border: none;
+  border-radius: 10px;
+  font-size: var(--input-font-size);
+}
+
+input:focus {
+  outline: 1px solid color.$solid-gray;
+}
+
+input:disabled {
+  --input-background-color: #{color.$solid-white};
+
+  box-shadow: none;
+}
+
+input.large {
+  --input-padding-y: 20px;
+  --input-padding-x: 25px;
+  --input-font-size: 20px;
+}
+
+input.small {
+  --input-padding-y: 13px;
+  --input-padding-x: 15px;
+  --input-font-size: 14px;
+}
+
+input.invalid {
+  --input-background-color: #{color.$cave-red};
+  --input-color: #{color.$pastel-red};
+}

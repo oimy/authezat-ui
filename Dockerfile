@@ -2,7 +2,7 @@ FROM node:22.20.0-alpine AS builder
 
 WORKDIR /app
 COPY . .
-RUN npm ci
+RUN npm i
 
 RUN npm run build
 

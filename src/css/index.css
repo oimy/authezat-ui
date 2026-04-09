@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --sans: 'Noto Sans', system-ui, 'Segoe UI', Roboto;
   --sans-letter-space: -3%;

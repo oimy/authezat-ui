@@ -7,13 +7,9 @@ export default defineConfig({
     plugins: [react(), svgr()],
     server: {
         port: 3411,
-        proxy: {
-            "/api/authezat/v1/": {
-                target: "https://api.authezat.io/api/",
-                secure: false,
-                changeOrigin: false,
-            },
-        },
+        allowedHosts: [
+            "authezat-local.soia.asia"
+        ]
     },
     resolve: {
         alias: {

@@ -1,7 +1,7 @@
 import styles from "./index.module.scss";
 import clsx from "clsx";
 import OiaSvg from "@assets/media/oia.svg?react";
-import type {Sign} from "../../api/signin/models.ts";
+import type {Sign} from "../../apis/signin/models.ts";
 import {Form, useForm} from "react-hook-form";
 import {useState} from "react";
 import axios from "axios";
@@ -23,11 +23,11 @@ export default function Signin() {
             });
     };
 
-    return (<section className={"d-flex flex-center flex-col w-100 h-100"}>
-        <OiaSvg className={styles.rotate}
+    return (<section className={"flex flex-center flex-col w-full h-full"}>
+        <OiaSvg className={styles.logoRotate}
                 width={200} height={200} viewBox="0 0 1444 1448"/>
         <article className={clsx("mt-14 pb-20", styles.signinContainer)}>
-            <Form className={"d-flex flex-col gap-6"}
+            <Form className={"flex flex-col gap-6"}
                   control={control}
                   action={"/edge/auth/signin"}
                   encType={'application/json'}

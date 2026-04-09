@@ -7,8 +7,8 @@ input {
   --input-background-color: #{color.$cave-gray};
   --input-color: #{color.$solid-dark};
 
-  width: calc(100% - (var(--input-padding-x) * 2));
-  min-width: calc(300px - (var(--input-padding-x) * 2));
+  width: 100%;
+  min-width: 100%;
   padding: var(--input-padding-y) var(--input-padding-x);
   background-color: var(--input-background-color);
   color: var(--input-color);

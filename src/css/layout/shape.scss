@@ -1,24 +1,6 @@
-.d-flex {
-  display: flex;
-}
-
 .flex-center {
   align-items: center;
+  align-content: center;
+  justify-items: center;
   justify-content: center;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.p-rel {
-  position: relative;
-}
-
-.p-abs {
-  position: absolute;
 }

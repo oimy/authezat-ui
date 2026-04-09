@@ -1,4 +1,5 @@
-import Signin from "./main/page/signin";
+import Signin from "./main/pages/signin";
+import "./css/app.scss";
 
 function App() {
     return (

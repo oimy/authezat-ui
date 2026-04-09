@@ -5,17 +5,30 @@
 }
 
 .rotate {
-  animation: rotate-45deg 3s infinite timing.$ease-out1;
+  opacity: 0;
+  animation: rotate-45deg 6s timing.$ease-out1 forwards;
 }
 
 @keyframes rotate-45deg {
   0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    filter: drop-shadow(0 4px 100px rgb(255 246 72 / 0.5));
     transform: rotate(0deg);
   }
+  40% {
+    transform: rotate(-15deg);
+  }
   80% {
+    filter: drop-shadow(0 4px 0px rgb(255 246 72 / 0));
     transform: rotate(375deg);
   }
   100% {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }

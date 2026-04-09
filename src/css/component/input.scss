@@ -40,7 +40,7 @@ input.small {
   --input-font-size: 14px;
 }
 
-input.invalid {
+input[aria-invalid="true"]  {
   --input-background-color: #{color.$cave-red};
   --input-color: #{color.$pastel-red};
 }

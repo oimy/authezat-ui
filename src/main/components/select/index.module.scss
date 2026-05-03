@@ -1,0 +1,38 @@
+.select-container:hover {
+  background-color: #f9f9f9;
+}
+
+.select-container:active {
+  background-color: #f0f0f0;
+}
+
+.option:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.unrotate {
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.appear {
+  opacity: 1;
+  visibility: visible;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.disappear {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}

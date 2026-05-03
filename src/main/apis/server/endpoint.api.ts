@@ -11,8 +11,8 @@ export const getEndpointsByServerSrl = AuthezatApiRequestBuilder()
     .setResponse<Endpoint[]>()
     .build();
 
-export const postEndpointsByServerSrl = AuthezatApiRequestBuilder()
-    .setPath(() => `/server/servers`)
+export const postEndpointByServerSrl = AuthezatApiRequestBuilder()
+    .setPath<{ serverSrl: number }>(({serverSrl}) => `/server/servers/${serverSrl}/endpoints`)
     .setMethod("POST")
     .setBody<EndpointSave>()
     .build();

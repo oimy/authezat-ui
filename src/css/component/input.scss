@@ -8,7 +8,6 @@ input {
   --input-color: #{color.$solid-dark};
 
   width: 100%;
-  min-width: 100%;
   padding: var(--input-padding-y) var(--input-padding-x);
   background-color: var(--input-background-color);
   color: var(--input-color);

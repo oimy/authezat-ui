@@ -19,7 +19,7 @@ export default function SigninPage() {
         axios.get("/api/authezat/v1/account/users/1")
             .then(res => setName(res.data.name))
             .catch(() => {
-                window.location.href = "https://authezat-local.soia.asia";
+                window.location.href = "/server/endpoint";
             });
     };
 

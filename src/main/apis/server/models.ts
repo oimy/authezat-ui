@@ -10,6 +10,7 @@ export interface Server {
 export type EndpointMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE';
 
 export interface Endpoint {
+    srl: number;
     serverSrl: number;
     method: EndpointMethod;
     path: string;
@@ -17,6 +18,6 @@ export interface Endpoint {
 }
 
 export interface EndpointSave {
-    method: EndpointMethod;
+    method: EndpointMethod | '';
     path: string;
 }

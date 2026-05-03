@@ -6,7 +6,7 @@ import {Form, useForm} from "react-hook-form";
 import {useState} from "react";
 import axios from "axios";
 
-export default function Signin() {
+export default function SigninPage() {
     const {
         register,
         control,

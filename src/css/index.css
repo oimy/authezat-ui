@@ -1,44 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --sans: 'Noto Sans', system-ui, 'Segoe UI', Roboto;
-  --sans-letter-space: -3%;
-  --sans-light-weight: 400;
-  --color: #333333;
-  --background-color: #FFFFFF;
+    --sans: 'Noto Sans', system-ui, 'Segoe UI', Roboto;
+    --sans-letter-space: -3%;
+    --sans-light-weight: 400;
+    --color: #333333;
+    --background-color: #FFFFFF;
 
-  font-family: var(--sans), sans-serif;
-  font-optical-sizing: auto;
-  font-weight: var(--sans-light-weight);
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  letter-spacing: var(--sans-letter-space);
+    font-family: var(--sans), sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--sans-light-weight);
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    letter-spacing: var(--sans-letter-space);
 
-  color-scheme: light dark;
-  color: var(--color);
-  background-color: var(--background-color);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    color-scheme: light dark;
+    color: var(--color);
+    background-color: var(--background-color);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --color: #FFFFFF;
-    --background-color: #333333;
-  }
+    :root {
+        --color: #FFFFFF;
+        --background-color: #333333;
+    }
 }
 
-html, body, #root {
-  height: 100%;
+html, body, #root, main {
+    height: 100%;
 }
 
 #root {
-  width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-
-body {
-  margin: 0;
+main {
+    width: 1280px;
 }
